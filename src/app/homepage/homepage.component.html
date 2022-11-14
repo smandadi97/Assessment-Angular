@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor = "let webs of web" >
+        <a routerLink="/product/{{webs.id}}">
+         <img src = "{{webs.imgurl}}" alt = "">
+         <div class="content">
+         <div class="name">
+        {{webs.id}} : 
+         {{webs.brand}} <br>
+         {{webs.description}} <br>
+         {{ webs.price|currency}}
+
+        </div>
+
+    </div>
+        </a>
+    </li>
+</ul>
